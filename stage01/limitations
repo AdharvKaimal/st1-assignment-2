@@ -1,0 +1,9 @@
+(See Document: "Stage_1_Lab_Student_Handout.docx" for context)
+Identified Limitations with the Programs (as given in the provided code for task1 and task1enhanced):
+
+•	Both programs store the information about patients in volatile memory (RAM) and therefore any data is lost. Ideally the data should be saved to an external file.
+•	Both programs cannot detect clashes with booking or even repeated booking.
+•	Both programs do not check the data that has been given; especially in parsing the relevant information.
+•	Both programs lack a UI to allow different actions like reading the data, data input or data modification.
+•	Both programs have no unique identifier for patients or practitioners or even appointments, possibly leading to errors.
+•	Both programs are hard-coded, which means all the information is pre-defined and the statements are         pre-defined, such that the program could not be used under a variety of different circumstances.

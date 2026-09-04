@@ -1,0 +1,18 @@
+# (See Document: "Stage_1_Lab_Student_Handout.docx" for context)
+
+# AI-GENERATED-ALTERNATIVE (as per the task)
+
+# A simple in‑memory appointment system (no database, no GUI)
+
+def create_appointment(patient_name, practitioner_name, appointment_time):
+    """Return a simple dictionary representing an appointment."""
+    appointment = {
+        "patient": patient_name,
+        "practitioner": practitioner_name,
+        "time": appointment_time
+    }
+    return appointment
+
+# Example usage:
+appt = create_appointment("Alice Johnson", "Dr. Smith", "2026-09-05 10:30 AM")
+print(appt)
