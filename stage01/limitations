@@ -1,4 +1,4 @@
-(See Document: "Stage_1_Lab_Student_Handout.docx" for context)
+PART (B) (See Document: "Stage_1_Lab_Student_Handout.docx" for context)
 Identified Limitations with the Programs (as given in the provided code for task1 and task1enhanced):
 
 •	Both programs store the information about patients in volatile memory (RAM) and therefore any data is lost. Ideally the data should be saved to an external file.

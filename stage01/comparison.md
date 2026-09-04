@@ -1,6 +1,6 @@
 (See Document: "Stage_1_Lab_Student_Handout.docx" for context)
 
-3. COMPARE AI and HUMAN VERSIONS (table)
+PART (E) COMPARE AI and HUMAN VERSIONS (table)
 
 *See the "ai_gen_alternative" or "ai_usage" to see the AI-generated
  alternative booking system.
@@ -14,7 +14,11 @@
 | Handles errors?		        | Yes (some)    | No         |
 | Could I explain it?	        | Yes           | Yes        |
 
-4. VERIFYING BEHAVIOUR
+PART(F) VERIFYING BEHAVIOUR
+
+*Tests were implemented for both the human and AI versions.
+(See files bottom of python files "smartcare_v01.py and
+ai_gen_alternative.py for the unusual input tests)
 
 Though the AI generated alternative script can book a normal
 appointment using methods, it does not any checks on factors

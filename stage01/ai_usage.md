@@ -2,7 +2,7 @@
 
 AI-USAGE ACTIVITIES FROM WORKSHOP
 
-1. AI-AS-A-TUTOR ACTIVITY PROMPT OUTPUT (from Copilot)
+PART (C) AI-AS-A-TUTOR ACTIVITY PROMPT OUTPUT (from Copilot)
 ===================================================
 **The short version:**  
 Your code prints two hard‑coded appointments, then uses lists, dictionaries, and functions to store and display appointments more flexibly. It works, but it’s very bare‑bones and has some structural limitations.
@@ -72,7 +72,7 @@ Let me know your answers and we’ll build on them.
 
 ===================================================
 
-2. AI GENERATED ALTERNATIVE (from Copilot)
+PART (D) AI GENERATED ALTERNATIVE (from Copilot)
 ===================================================
 # A simple in‑memory appointment system (no database, no GUI)
 

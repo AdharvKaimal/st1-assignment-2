@@ -1,6 +1,6 @@
 (See Document: "Stage_1_Lab_Student_Handout.docx" for context)
 
-5. Reflection:
+PART (H) Reflection:
 
 AI is a powerful tool for programming that helps in the technical development of software. 
 However, there are also severe limitations to the tool. On a base level, AI can help a user 

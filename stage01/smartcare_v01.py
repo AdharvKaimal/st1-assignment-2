@@ -42,3 +42,11 @@ print("Welcome to SmartCare: The Clinical Appointment Booking System!")
 book_appointment('Alice Smith', 'Dr. John Doe', '2024-07-20 10:00 AM')
 book_appointment('Bob Johnson', 'Dr. Jane Roe', '2024-07-20 11:30 AM')
 display_appointments()
+
+# Unusual Input Testing (tests written by me)
+# (Commented to prevent success error form appearing upon program execution)
+
+# unusual_1 = book_appointment("None", "None", "2026-09-05 10:30 AM") # Test with unusual input "None"
+# unusual_2 = book_appointment("", "", "2026-09-05 10:30 AM") # Test with empty string
+
+# display_appointments()
