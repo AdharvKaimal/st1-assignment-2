@@ -257,7 +257,7 @@ Further (Open) Questions:
 => 8. AI REQUIREMENTS REVIEW RECORD  
 -covers Part (F)  
 
-(2) AI Suggestion:  Current System Uses Spreadsheets and Paper Records  
+(1) AI Suggestion:  Current System Uses Spreadsheets and Paper Records  
     Evidence?:      Explicitly stated at the start of the client specification.  
     Decision:       A digital system is required to centrally manage information.  
     Reason:         To fix issues such as duplicate appointments, etc.   
