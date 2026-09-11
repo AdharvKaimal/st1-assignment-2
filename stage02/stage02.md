@@ -1,7 +1,7 @@
 STAGE 2 - ASSIGNMENT 2
 SMARTCARE v0.2 - Requirements and Specifications
 
-================================================
+================================================  
 1. PROBLEM AND SCOPE
 -covers Part (A) and Part (B)
 
@@ -26,7 +26,7 @@ enforce the provisional (assumed and additional) constaints of authenatication p
 security and record duplication prevention.
 
 
-================================================
+================================================  
 2. STAKEHOLDERS
 -covers Part (B)
 
@@ -70,7 +70,7 @@ EVIDENCE:   "Management wants a small... system"; the system needs to be operati
             and usable by the organisation. The assumption can be made that a small IT team
             will administer this system.
 
-================================================
+================================================  
 3. FUNCTIONAL REQUIREMENTS
 -covers Part(C)
 
@@ -126,7 +126,7 @@ FR-10       Log and Display Appointment History
             patient, practitioner, and status.
 
 
-================================================
+================================================  
 4. NON-FUNCTIONAL REQUIREMENTS
 -covers Part(D)
 
@@ -159,7 +159,7 @@ NFR-05      Testability:
             to run within a reasonable timeframe and occassionally (weekly) to
             ensure system integrity.
 
-================================================
+================================================  
 5. USER STORIES
 -covers Part(E)
 
@@ -194,7 +194,7 @@ US-06       "As the manager at SmartCare, I want to be able to manage the data a
             have the redunancy of knowing that the system can be managed locally."
 
 
-================================================
+================================================  
 6. ACCEPTANCE CRITERIA
 -covers Part (E)
 
@@ -227,7 +227,7 @@ US-03:      GIVEN:  a practitioner "Dr Doe" is active on the system AND they hav
                     as the time frame, the patient name, appointment start time and
                     duration of the appointment.
 
-================================================
+================================================  
 7. ASSUMPTIONS AND OPEN QUESTIONS
 -covers Part (F)
 
@@ -253,7 +253,7 @@ Further (Open) Questions:
 (5) Will the organisation provide basic training for staff and personnel in
     using this new system?
 
-================================================
+================================================  
 8. AI REQUIREMENTS REVIEW RECORD
 -covers Part(F)
 
