@@ -231,27 +231,27 @@ US-03:      GIVEN:  a practitioner "Dr Doe" is active on the system AND they hav
 7. ASSUMPTIONS AND OPEN QUESTIONS
 -covers Part (F)
 
-Assumptions for this system include:
+Assumptions for this system include:  
 (1) There are only four main issues, including duplicate bookings, difficulty
     finding patient information, inconsistent appointment status and limited
-    appointment history.
+    appointment history.  
 (2) Practitioners are local and internal staff that are authorised to access
-    and view the system.
-(3) There are no existing IT systems used by the organisation.
+    and view the system.  
+(3) There are no existing IT systems used by the organisation.  
 (4) SmartCare is able to provide staff basic training using the system. This
-    is important for adoption of the system.
+    is important for adoption of the system.  
 (5) The System is limited in scope, designed to primarily be used for a small
-    regional number of people and administered by a few authorised personnel.
+    regional number of people and administered by a few authorised personnel.  
 
-Further (Open) Questions:
+Further (Open) Questions:  
 (1) What does "maintainable" mean to SmartCare, at what scope must the system
-    be maintainable?
-(2) Is there a specific definition for "small system" given specific constraints?
-(3) What are the roles and access levels required for staff at SmartCare?
+    be maintainable?  
+(2) Is there a specific definition for "small system" given specific constraints?  
+(3) What are the roles and access levels required for staff at SmartCare?  
 (4) Does the system need to integrate with pre-existing systems at the
-    organisation? If so which ones?
+    organisation? If so which ones?  
 (5) Will the organisation provide basic training for staff and personnel in
-    using this new system?
+    using this new system?  
 
 ================================================  
 8. AI REQUIREMENTS REVIEW RECORD
