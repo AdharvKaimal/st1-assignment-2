@@ -257,41 +257,41 @@ Further (Open) Questions:
 => 8. AI REQUIREMENTS REVIEW RECORD  
 -covers Part (F)  
 
-(2) AI Suggestion:  Current System Uses Spreadsheets and Paper Records
-    Evidence?:      Explicitly stated at the start of the client specification.
-    Decision:       A digital system is required to centrally manage information.
-    Reason:         To fix issues such as duplicate appointments, etc. 
-    Verification:   Accepted
-
-(2) AI Suggestion:  Duplicate Bookings Occur
-    Evidence?:      Staff report "duplicate bookings" within the specification.
-    Decision:       The system needs to track similar or same booking records.
+(2) AI Suggestion:  Current System Uses Spreadsheets and Paper Records  
+    Evidence?:      Explicitly stated at the start of the client specification.  
+    Decision:       A digital system is required to centrally manage information.  
+    Reason:         To fix issues such as duplicate appointments, etc.   
+    Verification:   Accepted  
+  
+(2) AI Suggestion:  Duplicate Bookings Occur  
+    Evidence?:      Staff report "duplicate bookings" within the specification.  
+    Decision:       The system needs to track similar or same booking records.  
     Reason:         The system shall display and warn users of duplications in
-                    appointments, which will prevent the duplication errors.
-    Verification:   Accepted
-
-(3) AI Suggestion:  Difficulty Finding Patient Information
+                    appointments, which will prevent the duplication errors.  
+    Verification:   Accepted  
+  
+(3) AI Suggestion:  Difficulty Finding Patient Information  
     Evidence?:      Staff report "difficulty finding patient information" in
-                    the specification.
+                    the specification.  
     Decision:       The system shall quickly search through and display patient
-                    information.
+                    information.  
     Reason:         This will reduce the time needed for front-desk staff to
-                    find patient information.
-    Verification:   Accepted
-
-(4) AI Suggestion:  Inconsistent Appointment Status
+                    find patient information.  
+    Verification:   Accepted  
+  
+(4) AI Suggestion:  Inconsistent Appointment Status  
     Evidence?:      Reported in the client specification "inconsistent
-                    appointment status"
+                    appointment status"  
     Decision:       The system shall have fixed statuses based on assumed
-                    booking appointment states.
+                    booking appointment states.  
     Reason:         The system can reduce the confusion or misreporting of
-                    the status of the appointment bookings.
-    Verification:   Accepted
-
-(5) AI Suggestion:  Limited Appointment History
-    Evidence?:      Reported by staff "limited appointment history".
+                    the status of the appointment bookings.  
+    Verification:   Accepted  
+  
+(5) AI Suggestion:  Limited Appointment History  
+    Evidence?:      Reported by staff "limited appointment history".  
     Decision:       The system shall have a system that logs all appointments
-                    regardless of status for every patient.
+                    regardless of status for every patient.  
     Reason:         The system can provide a clear picture of all appointment
-                    histories for every patient.
-    Verification:   Accepted
+                    histories for every patient.  
+    Verification:   Accepted  
