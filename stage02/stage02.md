@@ -216,7 +216,7 @@ US-02:      GIVEN:  the system has 1000 patient records AND a patient "Jane Doe"
                     the parts of the name and DOB AND clicks "search"...
             THEN:   the system shall display a single specific patient record
                     detailing the patient searched OR present a list of closely
-                    matching patient records sorted with surname. 
+                    matching patient records sorted with surname within 10 seconds
 
 US-03:      GIVEN:  a practitioner "Dr Doe" is active on the system AND they have
                     valid working hours AND they have booked appointments...
@@ -231,7 +231,67 @@ US-03:      GIVEN:  a practitioner "Dr Doe" is active on the system AND they hav
 7. ASSUMPTIONS AND OPEN QUESTIONS
 -covers Part (F)
 
+Assumptions for this system include:
+(1) There are only four main issues, including duplicate bookings, difficulty
+    finding patient information, inconsistent appointment status and limited
+    appointment history.
+(2) Practitioners are local and internal staff that are authorised to access
+    and view the system.
+(3) There are no existing IT systems used by the organisation.
+(4) SmartCare is able to provide staff basic training using the system. This
+    is important for adoption of the system.
+(5) The System is limited in scope, designed to primarily be used for a small
+    regional number of people and administered by a few authorised personnel.
+
+Further (Open) Questions:
+(1) What does "maintainable" mean to SmartCare, at what scope must the system
+    be maintainable?
+(2) Is there a specific definition for "small system" given specific constraints?
+(3) What are the roles and access levels required for staff at SmartCare?
+(4) Does the system need to integrate with pre-existing systems at the
+    organisation? If so which ones?
+(5) Will the organisation provide basic training for staff and personnel in
+    using this new system?
+
 ================================================
 8. AI REQUIREMENTS REVIEW RECORD
 -covers Part(F)
 
+(2) AI Suggestion:  Current System Uses Spreadsheets and Paper Records
+    Evidence?:      Explicitly stated at the start of the client specification.
+    Decision:       A digital system is required to centrally manage information.
+    Reason:         To fix issues such as duplicate appointments, etc. 
+    Verification:   Accepted
+
+(2) AI Suggestion:  Duplicate Bookings Occur
+    Evidence?:      Staff report "duplicate bookings" within the specification.
+    Decision:       The system needs to track similar or same booking records.
+    Reason:         The system shall display and warn users of duplications in
+                    appointments, which will prevent the duplication errors.
+    Verification:   Accepted
+
+(3) AI Suggestion:  Difficulty Finding Patient Information
+    Evidence?:      Staff report "difficulty finding patient information" in
+                    the specification.
+    Decision:       The system shall quickly search through and display patient
+                    information.
+    Reason:         This will reduce the time needed for front-desk staff to
+                    find patient information.
+    Verification:   Accepted
+
+(4) AI Suggestion:  Inconsistent Appointment Status
+    Evidence?:      Reported in the client specification "inconsistent
+                    appointment status"
+    Decision:       The system shall have fixed statuses based on assumed
+                    booking appointment states.
+    Reason:         The system can reduce the confusion or misreporting of
+                    the status of the appointment bookings.
+    Verification:   Accepted
+
+(5) AI Suggestion:  Limited Appointment History
+    Evidence?:      Reported by staff "limited appointment history".
+    Decision:       The system shall have a system that logs all appointments
+                    regardless of status for every patient.
+    Reason:         The system can provide a clear picture of all appointment
+                    histories for every patient.
+    Verification:   Accepted
