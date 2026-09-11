@@ -11,4 +11,8 @@ larger context. The AI response was also very specific with regard to
 specifically defining each statement made in the client requirements, which
 was different from my assumptions and broader perspective I took when
 developing my own requirements and specifications for the system from the
-same client requirement specification statement.
+same client requirement specification statement. I believe, based on my
+observation, that requirements need evidence in order to properly understand
+a solution being developed, and to keep track of whether key components have
+been implemented within a deliverable system. This eliminates mistakes or
+further assumptions from manifesting and causing errors.
