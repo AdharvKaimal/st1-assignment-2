@@ -163,9 +163,69 @@ NFR-05      Testability:
 5. USER STORIES
 -covers Part(E)
 
+US-01       "As a front-end administrator, I want a system that rejects a booking
+            that conflicts with an appointment booking that the patient or
+            practitioner already has, so that I can stop duplicate bookings are
+            not created, resulting in conflicts in patient experience and
+            practitioner workflows"
+
+US-02       "As a receptionist, I want a system that will be able to
+            quickly search through patients records, given details such as patient
+            ID, name, DOB, etc, so that I can pull up correct and accurate records
+            of patients quickly" 
+
+US-03       "As a clinician, I want to be able to intuitively access a system where
+            it shows me my weekly appointments, the associated details and who I
+            am seeing, so that I can prepare for my patients and deliver the best
+            health advice and outcomes for them."
+
+US-04       "As a receptionist, I want to be able to quickly view a fixed set of
+            statuses regarding appointment bookings, so that I can more easily
+            view, manage and report to our patients and to our organisation."
+
+US-05       "As a practitioner, I want to be able to see the full appointment
+            history of a patient, including cancelled or changed appointments,
+            so that I can understand the healthcare history of my patient more
+            accurately."
+
+US-06       "As the manager at SmartCare, I want to be able to manage the data and
+            also be confident that our IT team can manage a small system, so that
+            I can use the system in a scalable organisational context, and also
+            have the redunancy of knowing that the system can be managed locally."
+
+
 ================================================
 6. ACCEPTANCE CRITERIA
 -covers Part (E)
+
+*US-01, US-02, and US-03 have been chosen to create the acceptance criteria.
+
+US-01:      GIVEN:  a practitioner has an appointment for patient "John Doe" from
+                    10:30 AM to 12:30 PM on 15/09/2026 AND the patient record for 
+                    "John Doe" exists AND the user is on the appointment booking 
+                    screen...
+            WHEN:   a user attempts to book an appointment for patient "John Doe"
+                    with the same practitioner at the same time...
+            THEN:   the system shall reject the appointment and display an error
+                    or warning message, informing the user about the conflict.
+
+US-02:      GIVEN:  the system has 1000 patient records AND a patient "Jane Doe"
+                    with a DOB of 10/05/1980 AND the screen is on the search
+                    page...
+            WHEN:   a user attempts to enter the specified information (such as)
+                    the parts of the name and DOB AND clicks "search"...
+            THEN:   the system shall display a single specific patient record
+                    detailing the patient searched OR present a list of closely
+                    matching patient records sorted with surname. 
+
+US-03:      GIVEN:  a practitioner "Dr Doe" is active on the system AND they have
+                    valid working hours AND they have booked appointments...
+            WHEN:   "Dr Doe" opens the system AND searches according to weekly or
+                    daily view...
+            THEN:   the system shall the booking details for each appointment
+                    booked within valid working hours AND provide information such
+                    as the time frame, the patient name, appointment start time and
+                    duration of the appointment.
 
 ================================================
 7. ASSUMPTIONS AND OPEN QUESTIONS
@@ -174,3 +234,4 @@ NFR-05      Testability:
 ================================================
 8. AI REQUIREMENTS REVIEW RECORD
 -covers Part(F)
+
