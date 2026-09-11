@@ -2,33 +2,33 @@ STAGE 2 - ASSIGNMENT 2
 SMARTCARE v0.2 - Requirements and Specifications
 
 ================================================  
-1. PROBLEM AND SCOPE
--covers Part (A) and Part (B)
+=> 1. PROBLEM AND SCOPE  
+-covers Part (A) and Part (B)  
 
 Specification: "SmartCare uses spreadsheets and paper records. Staff report duplicate bookings, 
 difficulty finding patient information, inconsistent appointment status and limited appointment 
 history. Management wants a small, maintainable patient, practitioner and appointment system."
 
-=> Problem Statement: 
+Problem Statement: 
 SmartCare currently manages patient records, practitioner data and appointment booking using 
-paper files and spreadsheets. Since there is no central system,  information has been fragmented 
+paper files and spreadsheets. Since there is no central system, information has been fragmented 
 across multiple documents. This has resulted in inconsistencies between booked appointments, 
 difficulty finding patient information, limited appointment history and duplicate bookings. 
 The organisation wants a small robust system that can manage patient information, practitioner 
-and appointment booking.
+and appointment booking.  
 
-=> Scope Statement:
+Scope Statement:
 Deliver a small local web-based system that manages the information of patients, practitioners
 and appointments. The system should enforce confirmed constraints such as enforcing appointment 
 statuses, provide a fast search feature for patient information, provide per-patient 
 appointment history and preventing simultaneous double booking per patient. The system will also 
 enforce the provisional (assumed and additional) constaints of authenatication protocols for
-security and record duplication prevention.
+security and record duplication prevention.  
 
 
 ================================================  
-2. STAKEHOLDERS
--covers Part (B)
+=> 2. STAKEHOLDERS  
+-covers Part (B)  
 
 STAKEHOLDER (1) - Management (Owners/Leadership)
 NEED:       Management is the owner of clinic/practice. They require a small, manageable system
@@ -71,8 +71,8 @@ EVIDENCE:   "Management wants a small... system"; the system needs to be operati
             will administer this system.
 
 ================================================  
-3. FUNCTIONAL REQUIREMENTS
--covers Part(C)
+=> 3. FUNCTIONAL REQUIREMENTS  
+-covers Part(C)  
 
 FR-01       Create Patient Record:
             An authorised user shall be able to create a patient record, within the system
@@ -127,8 +127,8 @@ FR-10       Log and Display Appointment History
 
 
 ================================================  
-4. NON-FUNCTIONAL REQUIREMENTS
--covers Part(D)
+=> 4. NON-FUNCTIONAL REQUIREMENTS  
+-covers Part(D)  
 
 NFR-01      Reliability and Availability:
             The system shall be operational for all operating hours of the clinic
@@ -160,8 +160,8 @@ NFR-05      Testability:
             ensure system integrity.
 
 ================================================  
-5. USER STORIES
--covers Part(E)
+=> 5. USER STORIES  
+-covers Part(E)  
 
 US-01       "As a front-end administrator, I want a system that rejects a booking
             that conflicts with an appointment booking that the patient or
@@ -195,8 +195,8 @@ US-06       "As the manager at SmartCare, I want to be able to manage the data a
 
 
 ================================================  
-6. ACCEPTANCE CRITERIA
--covers Part (E)
+=> 6. ACCEPTANCE CRITERIA  
+-covers Part (E)  
 
 *US-01, US-02, and US-03 have been chosen to create the acceptance criteria.
 
@@ -228,8 +228,8 @@ US-03:      GIVEN:  a practitioner "Dr Doe" is active on the system AND they hav
                     duration of the appointment.
 
 ================================================  
-7. ASSUMPTIONS AND OPEN QUESTIONS
--covers Part (F)
+=> 7. ASSUMPTIONS AND OPEN QUESTIONS  
+-covers Part (F)  
 
 Assumptions for this system include:  
 (1) There are only four main issues, including duplicate bookings, difficulty
@@ -254,8 +254,8 @@ Further (Open) Questions:
     using this new system?  
 
 ================================================  
-8. AI REQUIREMENTS REVIEW RECORD
--covers Part(F)
+=> 8. AI REQUIREMENTS REVIEW RECORD  
+-covers Part (F)  
 
 (2) AI Suggestion:  Current System Uses Spreadsheets and Paper Records
     Evidence?:      Explicitly stated at the start of the client specification.
