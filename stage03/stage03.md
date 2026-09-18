@@ -12,14 +12,14 @@ SMARTCARE v0.3 - SMARTCARE DOMAIN MODELLING
 Considering the candidates from the providided table:  
 | Candidate | Class? | Reason |
 |:-----|:------:|------:|
-| Patient | Yes | x  |   
-| Practitioner | Yes | x  |   
-| Appointment | Yes | x  |   
-| Name | No | x  |   
-| Clinic | No | x  |   
-| Database | No | x  |   
-| Cancellation | No | x  |   
-| Status | No | x  |   
+| Patient | Yes | Core part of the system; and essential for tracking patient history and information. |   
+| Practitioner | Yes | Core part of the system; essential for tracking practitioner credentials and availability times. |   
+| Appointment | Yes | Core part of the system; essential for tracking appointments and history. |   
+| Name | No | This is an attribute, not a class, it can belong to many classes. |   
+| Clinic | No | This depends on whether SmartCare has many clinics, however in this case there is only one. |   
+| Database | No | This is a technical part, not necessarily a class within the program. |   
+| Cancellation | No | This has been refactored into Class "BOOKING" and "APPOINTMENT" to manage statuses as a whole. |   
+| Status | No | This is an enumeration and an attribute for classes like "APPOINTMENT" |   
   
 Additional classes could include:  
 - Class "BOOKING", the class that checks whether a booking is avaiable and connects into class "APPOINTMENT".  
