@@ -9,11 +9,85 @@ SMARTCARE v0.3 - SMARTCARE DOMAIN MODELLING
 ================================================  
 => 2. CANDIDATE CLASSES  
 
+Considering the candidates from the providided table:  
+| Candidate | Class? | Reason |
+|:-----|:------:|------:|
+| Patient | Yes | x  |   
+| Practitioner | Yes | x  |   
+| Appointment | Yes | x  |   
+| Name | No | x  |   
+| Clinic | No | x  |   
+| Database | No | x  |   
+| Cancellation | No | x  |   
+| Status | No | x  |   
+  
+Additional classes could include:  
+- Class "BOOKING", the class that checks whether a booking is avaiable and connects into class "APPOINTMENT".  
+- Class "AVAILABILITY_SLOT" to check, in the class "APPOINTMENT" if a slot is open for class "BOOKING".  
+- Class "NOTIFICATION" to set reminders and track appointment slots within the system.
+- Class "MEDICAL RECORD" to track specific notes or information related to patients in class "PATIENT".    
 
 ================================================  
 => 3. CRC CARDS  
-
-
+  
+Class - PATIENT:  
+- Responsibility (1) - Storing and maintaining patient information, including information like a unique patient 
+  identifier (ID), first name, last name, address, phone number, patient email.  
+- Validation (1) = Another possible class "MEDICAL_RECORD" which links to health history for the patient.  
+  
+- Responsibility (2) - Validating uniqueness and preventing duplication or patient records or profiles.  
+- Validation (2) - Another possible class "BOOKING" to retrieve the patient history and compare data.  
+  
+- Responsibility (3) - Providing search dialogue or criteria to look up patients based on ID, DOB or name.   
+- Validation (3) - Another possible class "PRACTITIONER" to assign a carer or "APPOINTMENT" to assign
+  or book a specific appointment session.  
+  
+- Responsibility (4) - Providing the ability to update or modify patient information when changes occur.  
+- Validation (4) - A possible class "NOTIFICATION" or "BOOKING" to send and manage appointment reminders.  
+  
+Class - PRACTITIONER:  
+- Responsibility (1) - Storing practitioner credentials, including specialty and contact info.  
+- Validation (1) - Class "BOOKING" or "APPOINTMENT" to assign specific appointment times.  
+  
+- Responsibility (2) - Managing practitioner working schedules, inclduing working hours and days off.  
+- Validation (2) - Class "PATIENT" for consulation history and potentially Class "BOOKING".  
+   
+- Responsibility (3) - Validating time slot availability to prevent the double-booking issue.  
+- Validation (3) - Class "APPOINTMENT" to record consultation notes and display availability.  
+  
+- Responsibility (4) - Updating the status of the practitioner dynamically within the system.  
+- Validation (4) - Class "AVAILABILITY_SLOT" to define open times and sync with practitioner work days.  
+  
+Class - APPOINTMENT:  
+  
+- Responsibility (1) - Defining a specific time slot for the appointment, including start time, duration
+and end time.  
+- Validation (1) - Class "PRACTITIONER" to link to the assigned clinician.  
+  
+- Responsibility (2) - Tracking the current status of the slot; whether it is active, inactive, postponed.  
+- Validation (2) - Class "BOOKING" to confirm that the slot has been requested.  
+  
+- Responsibility (3) - Maintaining the history of past appointments for the specified slot.  
+- Validation (3) - Class "MEDICAL RECORD" to attach and save clinical notes and history for patients.
+  
+- Responsibility (4) - Enforcing or validating consistency in appointment status updates.  
+- Validation (4) - Class "NOTIFICATION" to alert the staff (and potentially patient) of status changes.
+  
+Class - BOOKING:  
+  
+- Responsibility (1) - Recording the request made by a patient or receptionist for an appointment.  
+- Validation (1) - Class "PATIENT" to identify the patient the booking is for.
+    
+- Responsibility (2) - Checking for duplicate requests, essentially same patient, practitioner and time.  
+- Validation (2) - Class "APPOINTMENT" to link a booking to a specific time slot when confirmed.  
+  
+- Responsibility (3) - Storing additional data related to the booking, including notes, booker, booked date.  
+- Validation (3) - Class "PRACTITIONER" to check the capacity and specialty notes before confirming.
+  
+- Responsibility (4) - Managing status and lifecycle of the booking request made, including statuses like
+active, inactive, cancelled, postponed.  
+- Validation (4) - Class "AVAILABILITY_SLOT" to ensure that the slot exists and has a valid status.  
+  
 ================================================  
 => 4. UML MODEL  
 
