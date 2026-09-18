@@ -16,13 +16,12 @@ SMARTCARE v0.3 - SMARTCARE DOMAIN MODELLING
 | Inconsistent Appointment Statuses | APPOINTMENT | updateStatus(newStatus), getStatus() | Class "APPOINTMENT" will manage the statuses in booked slots, including statuses such as "active", "inactive", "cancelled" or "postponed" |
 | Limited Appointment History | BOOKING and APPOINTMENT | getBookingLog(), getHistoryLog() | Class "BOOKING" will manage a permanent history of all bookings made. Whereas Class "APPOINTMENT" manages the booked slots themselves and the related history. |
 | Small Maintainable System | All main classes | All main functions | Additional systems, like managing numerous clinics, and additional classes must be minimised into the minimum necessary for a small-scope system. |
-| Practitioner Scheduling and Appointment System | APPOINTMENT | checkAvailability(), addAvailability() | Part of class "PRACTITIONER", the practitioner needs to be included in the systme to manage their own availability
-and the working hours for bookings and appointments. |
+| Practitioner Scheduling and Appointment System | APPOINTMENT | checkAvailability(), addAvailability() | Part of class "PRACTITIONER", the practitioner needs to be included in the system to manage their own availability and the working hours for bookings and appointments. |
    
 ================================================  
 => 2. CANDIDATE CLASSES  
   
-Considering the candidates from the providided table:  
+Considering the candidates from the provided table:  
 | Candidate | Class? | Reason |
 |:-----|:------:|:------|
 | Patient | Yes | Core part of the system; and essential for tracking patient history and information. |   
@@ -34,18 +33,20 @@ Considering the candidates from the providided table:
 | Cancellation | No | This has been refactored into Class "BOOKING" and "APPOINTMENT" to manage statuses as a whole. |   
 | Status | No | This is an enumeration and an attribute for classes like "APPOINTMENT" |   
   
-Additional classes could include:  
-- Class "BOOKING", the class that checks whether a booking is avaiable and connects into class "APPOINTMENT".  
+Additional main class to include:  
+- Class "BOOKING", the class that checks whether a booking is available and connects into class "APPOINTMENT".  
+
+Additional potential (possible) classes to include:  
 - Class "AVAILABILITY_SLOT" to check, in the class "APPOINTMENT" if a slot is open for class "BOOKING".  
-- Class "NOTIFICATION" to set reminders and track appointment slots within the system.
-- Class "MEDICAL RECORD" to track specific notes or information related to patients in class "PATIENT".    
+- Class "NOTIFICATION" to set reminders and track appointment slots within the system.  
+- Class "MEDICAL RECORD" to track specific notes or information related to patients in class "PATIENT".  
   
 ================================================  
 => 3. CRC CARDS  
   
 Class - PATIENT:  
 - Responsibility (1) - Storing and maintaining patient information, including information like a unique patient 
-  identifier (ID), first name, last name, address, phone number, patient email.  
+  identifier (ID), name, phone number, patient email.  
 - Validation (1) = Another possible class "MEDICAL_RECORD" which links to health history for the patient.  
   
 - Responsibility (2) - Validating uniqueness and preventing duplication or patient records or profiles.  
