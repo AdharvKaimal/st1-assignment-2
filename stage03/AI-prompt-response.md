@@ -1,0 +1,5 @@
+THIS DOCUMENT WAS CREATED TO RECORD THE COPILOT'S RESPONSE TO THE PROMPT
+AS PER PART (E) AND PART (F) OF THE ASSIGNMENT SPECIFICATION.
+for further information, see section Part (F) in "Stage_3_Lab_Student_Handout.docx"
+
+PROMPT:

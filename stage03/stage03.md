@@ -105,7 +105,17 @@ active, inactive, cancelled, postponed.
 => 4. UML MODEL  
  - The UML diagram within a free software known as "Draw.io". An image file has been attached within the
    stage03 folder for this UML diagram (open it separately).  
+ - The PNG file is: "UML_SmartCare.png"  
   
 ================================================  
 => 5. AI DESIGN REVIEW  
- - The AI prompt response has been added to another .md file. 
+ - The AI prompt and response has been recorded in a different file: "AI-prompt-response.md"
+
+================================================  
+=> 6. AI DESIGN REVIEW: COMPARE AND DECIDE  
+
+
+
+================================================  
+=> 7. PYTHON SKELETON STRUCTURE FOR CLASSES
+ - This structure has been completed in a separate Python file: "skeleton_structure.py"  
