@@ -11,7 +11,7 @@ SMARTCARE v0.3 - SMARTCARE DOMAIN MODELLING
 
 Considering the candidates from the providided table:  
 | Candidate | Class? | Reason |
-|:-----|:------:|------:|
+|:-----|:------:|:------|
 | Patient | Yes | Core part of the system; and essential for tracking patient history and information. |   
 | Practitioner | Yes | Core part of the system; essential for tracking practitioner credentials and availability times. |   
 | Appointment | Yes | Core part of the system; essential for tracking appointments and history. |   
