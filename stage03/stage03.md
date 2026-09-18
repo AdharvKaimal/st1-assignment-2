@@ -4,11 +4,24 @@ SMARTCARE v0.3 - SMARTCARE DOMAIN MODELLING
 ================================================  
 => 1. REQUIREMENTS REVIEW  
  - Note: assuming that SmartCare V.02 refers to Stage02 SmartCare Client Statement
-
-
+   and the main planning requirements/brainstorming developed in the previous stages.  
+ - This has been done according to the provided table in
+   "Stage_3_SmartCare_v03_Domain_Model_Workbook.docx" file.  
+ - State/Behaviour will document potential functions used in a python program solution.
+  
+| Requirement | Concept | State/Behaviour | Decision |
+|:-----|:------:|:------:|:------|
+| Staff Reporting Duplicate Bookings | BOOKING | checkForDupes(), confirmToAppointment() | There will be a class "BOOKING" and class "APPOINTMENT" to validate and manage booking statuses and slots |
+| Difficulty Finding Patient Information | PATIENT | getUniqueID(), search(criteria), getHistory()| There will be a class "PATIENT" that manages all patient data and records. This includes the ability for front-desk or other clinicans to search this information |
+| Inconsistent Appointment Statuses | APPOINTMENT | updateStatus(newStatus), getStatus() | Class "APPOINTMENT" will manage the statuses in booked slots, including statuses such as "active", "inactive", "cancelled" or "postponed" |
+| Limited Appointment History | BOOKING and APPOINTMENT | getBookingLog(), getHistoryLog() | Class "BOOKING" will manage a permanent history of all bookings made. Whereas Class "APPOINTMENT" manages the booked slots themselves and the related history. |
+| Small Maintainable System | All main classes | All main functions | Additional systems, like managing numerous clinics, and additional classes must be minimised into the minimum necessary for a small-scope system. |
+| Practitioner Scheduling and Appointment System | APPOINTMENT | checkAvailability(), addAvailability() | Part of class "PRACTITIONER", the practitioner needs to be included in the systme to manage their own availability
+and the working hours for bookings and appointments. |
+   
 ================================================  
 => 2. CANDIDATE CLASSES  
-
+  
 Considering the candidates from the providided table:  
 | Candidate | Class? | Reason |
 |:-----|:------:|:------|
@@ -26,7 +39,7 @@ Additional classes could include:
 - Class "AVAILABILITY_SLOT" to check, in the class "APPOINTMENT" if a slot is open for class "BOOKING".  
 - Class "NOTIFICATION" to set reminders and track appointment slots within the system.
 - Class "MEDICAL RECORD" to track specific notes or information related to patients in class "PATIENT".    
-
+  
 ================================================  
 => 3. CRC CARDS  
   
