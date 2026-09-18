@@ -113,14 +113,14 @@ active, inactive, cancelled, postponed.
 
 ================================================  
 => 6. AI DESIGN REVIEW: COMPARE AND DECIDE  
-
+  
 As per the AI prompt and response from "AI-prompt-response.md", the following suggestions have
 been accepted, rejected and modified AI suggestion.
-| ACCEPTED | x |
-| REJECTED | x |
-| MODIFIED | x |
+| ACCEPTED | REJECTED | MODIFIED |
+|:-----|:-----|:-----|
+| Class definition for class "PATIENT", since it follows the requirements and aligns with the solution developed already. | Extension of class "APPOINTMENT" to also cover booking information; this only bloats the appointment system, and instead it can be broken down further into two classes. | Defined requirements (R1...RX) can be adopted, since they show the base requirements for the system, however they need to be modified to fit the clases within the requirement scope. |  
 
 
 ================================================  
-=> 7. PYTHON SKELETON STRUCTURE FOR CLASSES
+=> 7. PYTHON SKELETON STRUCTURE FOR CLASSES  
  - This structure has been completed in a separate Python file: "skeleton_structure.py"  
