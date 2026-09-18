@@ -103,10 +103,9 @@ active, inactive, cancelled, postponed.
   
 ================================================  
 => 4. UML MODEL  
-
-
-
+ - The UML diagram within a free software known as "Draw.io". An image file has been attached within the
+   stage03 folder for this UML diagram (open it separately).  
+  
 ================================================  
 => 5. AI DESIGN REVIEW  
-
-
+ - The AI prompt response has been added to another .md file. 
