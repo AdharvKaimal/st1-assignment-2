@@ -114,6 +114,11 @@ active, inactive, cancelled, postponed.
 ================================================  
 => 6. AI DESIGN REVIEW: COMPARE AND DECIDE  
 
+As per the AI prompt and response from "AI-prompt-response.md", the following suggestions have
+been accepted, rejected and modified AI suggestion.
+| ACCEPTED | x |
+| REJECTED | x |
+| MODIFIED | x |
 
 
 ================================================  

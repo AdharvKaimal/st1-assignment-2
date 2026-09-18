@@ -1,6 +1,9 @@
 # This is a basic skeleton structure for the Classes of the SmartCare system.
 # This is potentially subject to change and implementation can be added later.
 
+# This structure is consistent with the UML model created in Part (4) of Stage03
+# as well as the requirements analysis and class analysis of Stage03.
+
 class Patient:
     """Represents a patient in the SafeCare system."""
 
