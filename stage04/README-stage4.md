@@ -5,3 +5,4 @@ All work for this week has been completed within "stage04.md" and "reflection.md
 Additional Note:  
 The assumption has been made that coding in python scripts will commence at this stage,
 (continuing on from the preliminary skeleton planning last stage).
+As such all work for "stage04.md" has been completed in "stage04.py"
