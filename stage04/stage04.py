@@ -89,7 +89,7 @@ class Appointment:
 
     def addClinicalNotes(self, new_notes:str):
         # adding clinical notes and adding it to the history log
-        self.note += f"\n{new_notes}"
+        self.notes += f"\n{new_notes}"
         self.history.append(f"{datetime.now()}: Clinical notes added.")
 
     def getHistoryLog(self):
@@ -133,4 +133,52 @@ class Booking:
     def getBookingLog(self):
         """Getting booking log history."""
         return self.log
-    
+
+# Basic Testing for Functionality ==========================================
+if __name__ == "__main__":
+
+    # PATIENT CLASS TEST 
+    # (checking for accessing ID and updating contact)
+    print("\n=== TESTING PATIENT CLASS ===")
+    p1 = Patient("P001", "Alice Smith", "0400 123 456", "alice@canberra.com")
+    print("Patient ID:", p1.getUniqueID())
+    p1.updateContact(phone="0400 999 888")
+    print("Updated Phone:", p1.phone)
+
+    # PRACTITIONER CLASS TEST
+    # (checking availability for practitioner)
+    print("\n=== TESTING PRACTITIONER CLASS ===")
+    pr1 = Practitioner("PR001", "Dr. John Kumar", "Physiotherapy")
+    slot1 = datetime(2026, 9, 26, 10, 0)
+    pr1.addAvailability(slot1)
+    print("Availability added:", pr1.availability)
+    print("Check availability:", pr1.checkAvailability(slot1))
+
+    # BOOKING CLASS TEST
+    # (checking if duplicate bookings can be detected)
+    print("\n=== TESTING BOOKING CLASS ===")
+    bookings = []
+    b1 = Booking("P001", datetime(2026, 9, 27), "Phone")
+    bookings.append(b1)
+
+    b2 = Booking("P001", datetime(2026, 9, 27), "Online")
+    print("Duplicate booking?", b2.checkforDupes(bookings))
+
+    b1.confirmToAppt()
+    print("Booking 1 status:", b1.status)
+    print("Booking log:", b1.getBookingLog()) # Printing Booking Log
+
+    # APPOINTMENT CLASS TEST
+    # (checking if status can be updated and clinical notes can be added)
+    print("\n=== TESTING APPOINTMENT CLASS ===")
+    appt1 = Appointment("A001", datetime(2026, 9, 27, 10, 0), datetime(2026, 9, 27, 10, 30))
+    appt1.addClinicalNotes("Initial assessment completed.")
+    appt1.updateStatus(AppointmentStatus.COMPLETED)
+
+    print("Appointment status:", appt1.status)
+    print("Appointment notes:", appt1.notes)
+    print("Appointment history:", appt1.getHistoryLog())
+
+    print("\n=== ALL TESTS COMPLETE ===\n")
+
+# ==========================================================================
