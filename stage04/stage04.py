@@ -18,7 +18,7 @@ class AppointmentStatus(Enum):
 
 # PATIENT Class
 class Patient:
-    """Represents a patient in the SafeCare system."""
+    """Represents a patient in the SmartCare system."""
 
     def __init__(self, patientID:str, name:str, phone:str, email:str):
         # Attributes: patientID, name, phone, email
@@ -44,17 +44,23 @@ class Patient:
 class Practitioner:
     """Represents a clinician member who sees patients."""
 
-    def __init__(self):
+    def __init__(self, practitionerID:str, name:str, specialty:str):
         # Attributes: practitionerID, name, specialty, availability
-        pass
+        self.practitionerID = practitionerID
+        self.name = name
+        self.specialty = specialty
+        self.availability = [] # work date-times or work slots for practitioner
 
-    def check_availability(self):
-        # Check if a given time slot is free
-        pass
+    def checkAvailability(self, requested_time):
+        return requested_time in self.availability
 
-    def add_availability(self):
-        # Add a new working time slot
-        pass
+    def addAvailability(self, slot):
+        if slot not in self.availability:
+            self.availability.appent(slot)
+    
+    def removeAvailability(self, slot):
+        if slot in self.availability:
+            self.availability.remove(slot)
 
 # APPOINTMENT Class
 class Appointment:
