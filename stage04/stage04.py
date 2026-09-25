@@ -66,18 +66,24 @@ class Practitioner:
 class Appointment:
     """Represents a confirmed time slot on the calendar."""
 
-    def __init__(self):
+    def __init__(self, appointmentID:str, startTime, endTime, notes=""):
         # Attributes: appointmentID, startTime, endTime, status, notes
-        pass
+        self.appointmentID = appointmentID
+        self.startTime = startTime
+        self.endTime = endTime
+        self.status = AppointmentStatus.SCHEDULED
+        self.notes = notes
+        self.history = [] # appointment history information
+        self.history.append(f"{datetime.now()}: Appointment created.")
+    
+    def updateStatus(self, new_status: AppointmentStatus):
+        self.status = new_status
+        self.history.append(f"{datetime.now()}: Status updated to {new_status.value}")
 
-    def update_status(self):
-        # Change status, such as "active", "inactive", "cancelled", "postponed"
-        pass
+    def addClinicalNotes(self, new_notes:str):
+        self.note += f"\n{new_notes}"
+        self.history.append(f"{datetime.now()}: Clinical notes added.")
 
-    def add_clinical_notes(self):
-        # Attach notes from the visit
-        pass
-
-    def get_history_log(self):
-        # Return history of stats changes
-        pass
+    def getHistoryLog(self):
+        return self.history
+    
