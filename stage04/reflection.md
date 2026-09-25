@@ -3,7 +3,7 @@ REFLECTION (STAGE 04)
 The further implementation of the classes from Stage03 was continued here in Stage04.
 I found that the implementation of the classes, without AI, using regular Python OOP
 was straightforward and could be implemented gradually using the UML structure that
-was planned.
+was planned.  
 In terms of the AI, I found that it overcomplicated the OOP process for the
 implementation of the APPOINTMENT Class. Though the implementation was mostly correct,
 it further assumed additional requirements and grew the scope to additional libraries,
