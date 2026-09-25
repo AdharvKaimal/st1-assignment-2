@@ -4,6 +4,8 @@ SMARTCARE v0.4 - IMPLEMENTING THE DOMAIN LAYER
 ================================================  
 => 1. REVISITING APPROVED UML  
  - Relevant work has been done in "stage04.py"  
+ - Code is being implemented according to UML developed in Stage 03
+ - This includes the new BOOKING Class to break down functionality
 
 ================================================  
 => 2. IMPLEMENTING PATIENT
