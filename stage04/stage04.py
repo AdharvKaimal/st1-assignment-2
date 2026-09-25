@@ -87,3 +87,32 @@ class Appointment:
     def getHistoryLog(self):
         return self.history
     
+# BOOKING Class
+class Booking:
+    """Represents booking requests made in the SmartCare System"""
+    
+    def __init__(self, patientID:str, requestDate, source:str):
+        self.patientID = patientID
+        self.requestDate = requestDate
+        self.source = source
+        self.status = BookingStatus.REQUESTED
+        self.log = []
+        self.log.append(f"{datetime.now()}: Booking created.")
+
+    def checkforDupes(self, existing_bookings):
+        for booking in existing_bookings:
+            if booking.patientID == self.patientID and booking.requestDate == self.requestDate:
+                return True
+        return False
+    
+    def confirmToAppt(self):
+        self.status = BookingStatus.CONFIRMED
+        self.log.append(f"{datetime.now()}: Booking confirmed")
+
+    def cancelRequest(self):
+        self.status = BookingStatus.CANCELLED
+        self.log.append(f"{datetime.now()}: Booking cancelled")
+
+    def getBookingLog(self):
+        return self.log
+    
